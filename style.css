@@ -1,0 +1,47 @@
+body {
+    font-family: Roboto;
+}
+
+ol {
+    list-style-position: inside;
+
+}
+
+h1 {
+    font-family: "Dancing Script";
+    text-align: center;
+}
+
+h2 {
+    font-family: "Roboto Slap";
+    text-align: center;
+    color: #6ab04c;
+}
+
+.top-container {
+    display: grid;
+    grid-template-columns: 2fr  2fr 1fr;
+    justify-items: center;
+
+}
+
+.top-grid-item > p {
+    width: 500px;
+
+}
+
+.top-grid-item {
+    justify-self: center;
+}
+
+.education > li {
+    text-align: center;
+
+}
+
+.work-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+
+}

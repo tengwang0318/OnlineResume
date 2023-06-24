@@ -3,67 +3,125 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My Resume</title>
+    <title>About Me</title>
+
+    <!-- font-family: Dancing Script && Roboto Slap && Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Slab&Roboto:wght@300&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Teng's Resume</h1>
-    <p>Contact info: <a href=mailto:"tengwang0318@gmail.com">tengwang0318@gmail.com</a></p>
-    <hr>
-    <h2>EDUCATION</h2>
-    <ol>
-        <li>
-            <p><b>Northwest University</b></p>
-            <p>Bachelor Of Science in Information System, 2018 Sep - 2022 June</p>
-        </li>
-        <li>
-            <p><b>The University of Hong Kong</b></p>
-            <p>Master of Science in Artificial Intelligence, 2023 Sep - 2025 Jan</p>
-        </li>
-    </ol>
-    <hr>
-    <h2>WORK EXPERIENCE</h2>
-    <ol>
-        <li><b>Surfin</b></li>
-        <p><b>Junior Python Developer</b> from 2022 July to 2022 September
-            <br>
-            Base: Singapore
-            <br>
-            Responsibility: Collecting data by web crawler or purchasing, and modifying these data into specified
-            features which is used for training models.
-        </p>
-        <li><b>OneMaker Startup Company</b></li>
-        <p><b>Data Mining Engineer</b> from 2022 September to 2022 December<br>
-            Base: Beijing<br>
-            Responsibility:
-        <ul>
-            <li>Realized distributed web crawlers to collect 100,000,000+ data from famous electronic component
-                companies(Digikey, Arrow, etc.); These web crawlers could update all of data within two weeks.
+
+    <h1>About Me</h1>
+
+    <h2>Brief Self-Introduction</h2>
+    <div class=" top-container">
+        <div class="top-grid-item">
+            <p>
+                My name is Teng Wang, a programmer who specializes in Natural Language Processing and Web Development.
+                I also have a passion for recycling, running, and playing video games. I am an alumnus of NWU. Now, I am
+                studying Artificial Intelligence for the Master Degree in HKU.
+
+            </p>
+
+        </div>
+        <div class="top-grid-item">
+            <p>Contact info:</p>
+            <ul style="list-style: none; display: grid; justify-content: space-around; grid-template-columns: 2.5fr 1fr 1.5fr" >
+                <li><a href=mailto:"tengwang0318@gmail.com">tengwang0318@gmail.com</a></li>
+                <li><a href="https://github.com/tengwang0318">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/teng-wang-6946621b0/">LinkedIn</a></li>
+            </ul>
+            </div>
+        <div class="top-grid-item">
+            <img src="images/profile.jpg" , alt="Teng's Photo" , style="width: 100px">
+        </div>
+
+    </div>
+    <br><br>
+
+
+    <div class="education">
+        <h2>Education</h2>
+        <ol class="education">
+
+            <li>
+                <b>Northwest University</b>
+                <p>Bachelor Of Science in Information System, 2018 Sep - 2022 June</p>
             </li>
             <li>
-                Maintained the database and performed some calculations on the data, such as predicting the risk of
-                some products.
+                <b>The University of Hong Kong</b>
+                <p>Master of Science in Artificial Intelligence, 2023 Sep - 2025 Jan</p>
             </li>
-        </ul>
-        </p>
-    </ol>
+        </ol>
+    </div>
+    <br><br>
 
-    <hr>
-    <h2>RESEARCH EXPERIENCE</h2>
+    <h2>Work Experience</h2>
+    <ol>
+        <div class="work-container">
+            <div class="work-grid-item">
+                <li><b>Surfin</b></li>
+                <p><b>Junior Python Developer</b> from 2022 July to 2022 September
+                    <br>
+                    Base: Singapore
+                    <br>
+                    Responsibility:<br>
+                <ul>
+                    <li style="list-style: none">
+                        Collecting data by web crawler or purchasing, and modifying these data into
+                        specified
+                        features which is used for training models.
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div class="work-grid-item">
+
+                <li><b>OneMaker Startup Company</b></li>
+                <p><b>Data Mining Engineer</b> from 2022 September to 2022 December<br>
+                    Base: Beijing<br>
+                    Responsibility:
+                <ul>
+                    <li style="list-style: none">Realized distributed web crawlers to collect 100,000,000+ data from
+                        famous electronic component
+                        companies(Digikey, Arrow, etc.); These web crawlers could update all of data within two weeks.
+                    </li>
+                    <li style="list-style: none">
+                        Maintained the database and performed some calculations on the data, such as predicting the risk
+                        of
+                        some products.
+                    </li>
+
+                </ul>
+                </p>
+            </div>
+        </div>
+    </ol>
+    <br><br>
+
+    <h2>Research Experience</h2>
     <ol>
         <li>
-            <p><b>
+            <b>
                 “Auto-ABSA: Automatic Detection of Aspects in Aspect-Based Sentiment Analysis”</b> <br>
-                Project leader & Leader author <br>
-                timeline: Sep 2021-Dec 2021
+            Project leader & Leader author <br>
+            timeline: Sep 2021-Dec 2021
             </p>
             <p>What we did:
             <ul>
-                <li>Built a multi-objective binary classification model to obtain all of "aspect" of the sentence.</li>
+                <li>Built a multi-objective binary classification model to obtain all of "aspect" of the
+                    sentence.
+                </li>
                 <li>Used an auxiliary sentence to combine the aspect and the original sentence as input for Text
                     Classification Model which is used to get the sentiment of the sentence.
                 </li>
-                <li>Tested the performance of models based on Bert-Base, RoBerta-base and DeBerta-base respectively.
+                <li>Tested the performance of models based on Bert-Base, RoBerta-base and DeBerta-base
+                    respectively.
                 </li>
                 <li>The accuracy of model emotion prediction is 84%, and the recall rate is 80% and realized
                     "out-of-domain" in ABSA (Aspect Based Sentiment Analysis).
@@ -75,22 +133,29 @@
             </p>
         </li>
         <li>
-            <p><b>Data Mining Based on Meituan Takeaway Platform</b>
-                <br>timeline: Sep 2020-Oct 2020
-            </p>
+            <b>Data Mining Based on Meituan Takeaway Platform</b>
+            <br>timeline: Sep 2020-Oct 2020
+
             <p> What I did:
             <ul>
-                <li>Developed web crawlers to obtain catering 20,000+ data on the Meituan platform and explored the
+                <li>Developed web crawlers to obtain catering 20,000+ data on the Meituan platform and explored
+                    the
                     distribution rules of the catering industry in Xi 'an.
                 </li>
-                <li>Carried out visual processing to get the general outline of the font based on the encoding of the
-                    Meituan platform CSS encrypted font, and used OCR technology for recognition to obtain the encoding
+                <li>Carried out visual processing to get the general outline of the font based on the encoding
+                    of
+                    the
+                    Meituan platform CSS encrypted font, and used OCR technology for recognition to obtain the
+                    encoding
                     table of
                     the encrypted font.
                 </li>
-                <li>Used K-mean clustering algorithm to cluster analysis of restaurants in Xi'an and invoked folium
+                <li>Used K-mean clustering algorithm to cluster analysis of restaurants in Xi'an and invoked
+                    folium
                     package to
-                    visualize the clustering results, and analyzed the relationship between the spatial location of the
+                    visualize the clustering results, and analyzed the relationship between the spatial location
+                    of
+                    the
                     corresponding stores and the clustering results.
                 </li>
             </ul>
@@ -101,29 +166,31 @@
         </li>
     </ol>
 
-    <hr>
-    <h2>AWARDS</h2>
+
+    <h2>Awards</h2>
     <ul>
         <li>The First Prize Scholarship in Northwest University for Y2018-2019 & Y2019-2020</li>
         <li>The First Prize in The Chinese Mathematics Competitions for Y2019</li>
         <li>The Meritorious Prize in Mathematical Contest in Modeling/The Interdisciplinary Contest in Modeling
             (MCM/ICM)) for Y2020
         </li>
-        <li>The First Prize in Shaanxi Provenance in Contemporary Undergraduate Mathematical Contest in Modeling for
+        <li>The First Prize in Shaanxi Provenance in Contemporary Undergraduate Mathematical Contest in Modeling
+            for
             Y2020
         </li>
         <li>Individual Scholarship in Northwest University for Y2020-2021ß</li>
     </ul>
-    <hr>
-    <h2>SKILLS</h2>
+    <br><br>
+
+    <h2>Skills</h2>
     <ul>
         <li>NLP</li>
         <li>Web Crawler</li>
         <li>Data Analysis</li>
         <li>Deep Learning</li>
-        <li>Full Stack</li>
+        <li>Web Development</li>
     </ul>
-
+    <br><br>
 
 </body>
 
